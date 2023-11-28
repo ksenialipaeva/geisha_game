@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Авторизация</title>
+        <link rel="stylesheet" href="reg.css"></linkrel>
+        <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="wrapper">
+            <a id="home" href="main.html">
+                <img  src="src/homepage.svg" alt="Домой">
+            </a>
+            <h1>Авторизация</h1>
+        </div>
+        <form action="/action_page.php">
+            <div class="container">
+              <label for="login"><b>Логин</b></label>
+              <input type="text" placeholder="Введите логин" name="login" required>
+          
+              <label for="psw"><b>Пароль</b></label>
+              <input type="password" placeholder="Введите пароль" name="psw" required>
+              <button type="submit" class="registerbtn">Войти</button>
+            </div>
+            
+            <div class="container signin">
+              <p>Нет аккаунта? <a href="registration.html">Зарегистрироваться</a>.</p>
+            </div>
+          </form>
+    </body>
+</html>

@@ -1,0 +1,415 @@
+body{
+ max-width: 1440px;
+margin: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;}
+    
+.group_badge{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 14vh;
+    width: 40vw;
+}
+
+.header_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 14vh;
+    width: 30vw;
+}
+
+
+.opponent_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 30vw;
+}
+
+.person_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 20vw;
+}
+       
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 14vh;
+}
+    
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    height: 50vh;
+    width: 100%;
+}
+
+.player_menu{
+    background-color: rgb(255, 255, 255);
+    height: 36vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main > p{
+    padding-top: 0%;
+    font-family: 'Montserrat';
+    font-size: 18pt;
+}
+
+.row_cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 95%;
+    width: 100%;
+}
+
+.card{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 12.5%;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row_check{
+    display: flex;
+    justify-content: center;
+}
+
+
+#Ayane_gift{
+    background-color: #B030AB;
+}
+#Iroha_gift{
+    background-color: #C64225;
+}
+#Tomoyo_gift{
+    background-color: #C5C04C;
+}
+#Namiko_gift{
+    background-color: #7D5BDE;
+}
+#Tiharu_gift{
+    background-color: #B07530;
+}
+#Andzu_gift{
+    background-color: #30B045;
+}
+#Ruri_gift{
+    background-color: #E22C8E;
+} 
+
+
+.opponent_badge{
+    background-color: black;
+    height:50%;
+    width:18%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge{
+    background-color: black;
+    height:38%;
+    width:25%;
+    border-radius: 10%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#badge_enabled:hover{
+    background-color: rgb(52, 48, 176);
+}
+
+#badge_enabled{
+    background-color: #120789;
+}
+
+#badge_disabled{
+    background-color: #818181;
+}
+
+
+.player_badges{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 30vw;
+    height: 100%;
+    
+}
+
+.row_badge_top{
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    background-color: #ffffff;
+    width:100%;
+    height: 50%;
+}
+
+.row_badge_bottom{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    background-color: #ffffff;
+    width:100%;
+    height: 50%;
+}
+
+.player_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    width: 50vw;
+    height: 100%;
+    position: relative;
+}
+
+.player_card{
+    width: 30%;
+    position: absolute;
+}
+
+.player_card:hover{
+    margin-bottom: 5%;
+}
+
+.player_card > img{
+    height: 30vh;
+}
+
+#first_gift{
+    left: 5%;
+}
+
+#second_gift{
+    left: 15%;
+}
+
+#third_gift{
+    left: 25%;
+}
+
+#fourth_gift{
+    left: 35%;
+}
+
+#fifth_gift{
+    left: 45%;
+}
+
+#sixth_gift{
+    left: 55%;
+}
+
+.info{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(255, 255, 255);
+    height:50%;
+    width:21%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info:hover > #quit{
+    background-color: #FF1D6E;
+    border-radius: 50%;
+}
+
+
+
+.info > p{
+    font-family: 'Montserrat';
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 12pt;
+    margin-top: 5%;
+}
+
+.info > img{
+    height: 80%;
+}
+
+.person{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(255, 255, 255);
+    height:7vh;
+    width:100%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.opponent{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(255, 255, 255);
+    height:7vh;
+    width:40%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.person > p{
+    font-family: 'Montserrat';
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 24pt;
+}
+
+.opponent > p{
+    font-family: 'Montserrat';
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 24pt;
+}
+
+.point_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+    margin-top: 5%;
+}
+
+
+.points{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(255, 255, 255);
+    height:7vh;
+    width:100%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.points > p{
+    font-family: 'Montserrat';
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 24pt;
+}
+
+.point_description{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(255, 255, 255);
+    height:7vh;
+    width:100%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.point_description > p{
+    font-family: 'Montserrat';
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 14pt;
+}
+
+#badge_ayane{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+#badge_iroha{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+#badge_tomoyo{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+#badge_namiko{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+#badge_tiharu{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+#badge_andzu{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+#badge_ruri{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+a{
+    text-decoration: none;
+}

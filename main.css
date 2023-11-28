@@ -1,0 +1,39 @@
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#title{
+    width: 50%;
+}
+a{
+    text-decoration: none;
+}
+#play{
+    background-color: #340570;
+    width: 100%;
+    height: 8%;
+    font-family: 'Cormorant Garamond';
+    font-size: 36pt;
+    color: white;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#rules{
+    background-color: #CC1578;
+    width: 100%;
+    height: 8%;
+    font-family: 'Cormorant Garamond';
+    font-size: 36pt;
+    color: white;
+    text-align: center;
+}
+
+body{
+    background-image: url("src/background.jpg");
+}
