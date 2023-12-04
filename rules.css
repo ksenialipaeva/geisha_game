@@ -46,6 +46,7 @@ h2{
 }
 
 #prev{
+    display: none;
     border-radius: 50%;
     border-width: 0;
     width: 5vw;

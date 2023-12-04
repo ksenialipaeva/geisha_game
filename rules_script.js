@@ -13,6 +13,8 @@ function next(){
         var b = document.getElementById("next");
         b.style.opacity = 0;
     }
+    var b = document.getElementById("prev");
+    b.style.opacity = 0;
     var id = "text"+i;
     var t = document.getElementById(id);
     t.style.display = "inline";
@@ -30,6 +32,7 @@ function prev(){
         var b = document.getElementById("prev");
         b.style.opacity = 0;
     }
+    w
     var id = "text"+i;
     var t = document.getElementById(id);
     t.style.display = "inline";
