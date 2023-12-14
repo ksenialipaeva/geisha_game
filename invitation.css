@@ -1,0 +1,87 @@
+body{
+    font-family: "Montserrat";
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    background-color: #CC1578;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+}
+
+h1{
+    font-family: "Cormorant Garamond";
+    color: white;
+    font-size: 36pt;
+    font-weight: normal;
+}
+#home{
+    height: 50%;
+    margin-left: 15.5%;
+    margin-right: 5%;
+}
+
+.tables{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.available{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 45%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.available_player{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+}
+
+p{
+    width: 40%;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+button{
+    height: 65%;
+    width: 25%;
+    border-radius: 8px;
+    border-width: 0px;
+    color: white;
+    font-size: 14px;
+}
+
+.send{
+    background-color: #340570;
+}
+
+.accept{
+    background-color: #2A953C;
+}
+
+.decline{
+    background-color: #C64225;
+}

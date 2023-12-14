@@ -23,7 +23,6 @@ body{
    }
 
 h1{
-    background-color: #CC1578;
     font-family: "Cormorant Garamond";
     color: white;
     font-size: 36pt;
@@ -37,6 +36,8 @@ h1{
 
 form{
     margin-left: 23.5%; 
+    display:flex;
+    flex-direction: column;
 }
 
 .container{

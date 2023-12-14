@@ -1,7 +1,7 @@
 <?php
 $login = $_POST["login"];
 $password = $_POST["psw"];
-$user = file_get_contents("https://mysql.lavro.ru/call.php?db=312580&pname=reg&p1=$login&p2=$password");
+$user = file_get_contents("https://mysql.lavro.ru/call.php?db=312580&pname=auth&p1=$login&p2=$password");
 $user = json_decode($user);
 $token = $user->tk[0];
 

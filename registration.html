@@ -29,10 +29,8 @@
               <input type="password" placeholder="Введите пароль" name="psw" required>
               <hr>        
               <button type="submit" class="registerbtn">Зарегистрироваться</button>
-            </form>
-            <div class="container signin">
               <p>Уже есть аккаунт? <a href="auth.html">Войти</a>.</p>
-            </div>
+        </form>
          
           <script>
            $(document).ready(function() {
@@ -46,7 +44,7 @@
                                     let jsonData = JSON.parse(response);
                                     if (jsonData.success == "1")
                                     {
-                                        location.href = 'field.html';
+                                        location.href = 'invitation.php';
                                     }
                                     else
                                     {

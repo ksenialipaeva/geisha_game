@@ -3,30 +3,55 @@
     <head>
         <title>Авторизация</title>
         <link rel="stylesheet" href="reg.css"></linkrel>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+      <dialog id="error">
+        <div>
+            <p id="error_text">Не получилось</p>
+            <button onclick="window.error.close();">ОК</button>
+        </div>                
+    </dialog>
         <div class="wrapper">
             <a id="home" href="main.html">
                 <img  src="src/homepage.svg" alt="Домой">
             </a>
             <h1>Авторизация</h1>
         </div>
-        <form action="/action_page.php">
-            <div class="container">
+        <form id="form">
               <label for="login"><b>Логин</b></label>
               <input type="text" placeholder="Введите логин" name="login" required>
-          
               <label for="psw"><b>Пароль</b></label>
               <input type="password" placeholder="Введите пароль" name="psw" required>
               <button type="submit" class="registerbtn">Войти</button>
-            </div>
-            
-            <div class="container signin">
               <p>Нет аккаунта? <a href="registration.html">Зарегистрироваться</a>.</p>
-            </div>
           </form>
+          <script>
+            $(document).ready(function() {
+                     $('#form').submit(function(e) {
+                         e.preventDefault();
+                             $.ajax({
+                                 method: "POST",
+                                 url: 'scripts/auth.php',
+                                 data: $(this).serialize(),
+                                 success: function(response) {
+                                     let jsonData = JSON.parse(response);
+                                     if (jsonData.success == "1")
+                                     {
+                                         location.href = 'invitation.php';
+                                     }
+                                     else
+                                     {
+                                         window.error.showModal();
+                                         document.getElementById("error_text").innerText=jsonData.error;
+                                     }
+                                 }
+                             });
+                         });
+                     });
+           </script>
     </body>
 </html>
