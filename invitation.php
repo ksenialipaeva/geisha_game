@@ -78,6 +78,8 @@
                                 let p = document.getElementById("player"+i);
                                 p.textContent = "";
                                 let d = document.getElementById("av"+i);
+                                d.style.backgroundColor = "#340570";
+                                d.textContent = "Отправить приглашение";
                                 d.hidden = true;
                                 
                             }
