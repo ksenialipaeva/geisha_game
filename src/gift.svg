@@ -1,0 +1,12 @@
+<svg width="100" height="55" viewBox="0 0 100 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="100" height="55" rx="8" fill="#120789"/>
+<line x1="49.2388" y1="44.1746" x2="49.2388" y2="11" stroke="white"/>
+<line y1="-0.5" x2="15.608" y2="-0.5" transform="matrix(0.584986 -0.811043 0.808837 0.588033 40.6084 23.6587)" stroke="white"/>
+<line y1="-0.5" x2="15.608" y2="-0.5" transform="matrix(-0.584986 -0.811043 -0.808837 0.588033 58.4346 23.6587)" stroke="white"/>
+<line y1="-0.5" x2="33.1746" y2="-0.5" transform="matrix(0 1 1 0 27.1304 11.0001)" stroke="white"/>
+<line y1="-0.5" x2="15.608" y2="-0.5" transform="matrix(0.584986 0.811043 0.808837 -0.588033 18 31.516)" stroke="white"/>
+<line y1="-0.5" x2="15.608" y2="-0.5" transform="matrix(-0.584986 0.811043 -0.808837 -0.588033 35.8262 31.516)" stroke="white"/>
+<line y1="-0.5" x2="33.1746" y2="-0.5" transform="matrix(0 1 1 0 73.2173 11.0001)" stroke="white"/>
+<line y1="-0.5" x2="15.608" y2="-0.5" transform="matrix(0.584986 0.811043 0.808837 -0.588033 64.0869 31.516)" stroke="white"/>
+<line y1="-0.5" x2="15.608" y2="-0.5" transform="matrix(-0.584986 0.811043 -0.808837 -0.588033 81.9131 31.516)" stroke="white"/>
+</svg>

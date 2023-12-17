@@ -1,14 +1,20 @@
+@media (min-width: 1100px) {
+
 body{
-    max-width: 1440px;
-   margin: auto;
+    margin: auto;
+    background-color: #9b677a;
+    color: white;
    }
 
 h1{
-    background-color: #CC1578;
     font-family: "Cormorant Garamond";
     color: white;
     font-size: 36pt;
     font-weight: normal;
+}
+
+form{
+    margin-top: 5%;
 }
 
 #text0{
@@ -52,7 +58,8 @@ h2{
     border-width: 0;
     width: 5vw;
     height: 5vw;
-    font-size: 35pt;
+    font-size: 24pt;
+    color: white;
 }
 
 #next{
@@ -61,7 +68,20 @@ h2{
     border-width: 0;
     width: 5vw;
     height: 5vw;
-    font-size: 35pt;
+    font-size: 24pt;
+    color: white;
+}
+
+#prev:hover{
+    background-color: #82104d;
+}
+
+#next:hover{
+    background-color: #82104d;
+}
+
+#more:hover{
+    background-color: rgb(52, 48, 176);
 }
 
 .block{
@@ -107,3 +127,36 @@ h2{
     margin-left: 15.5%;
     margin-right: 5%;
 }
+
+#home > img{
+    height: 100%;
+}
+
+#rule{
+    margin-left: 15.5%;
+    margin-right: 5%;
+    text-decoration: none;
+    font-size: 36pt;
+    line-height: 100%;
+    color:white;
+}
+
+.stub{
+    display: none;
+}
+}
+
+@media (max-width: 1100px) {
+    .block{
+        display: none;
+    }
+    
+    .stub{
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat";
+    }
+    }

@@ -1,6 +1,10 @@
 body{
+    margin: auto;
+    background-color: #9b677a;
+    color: white;
     font-family: "Montserrat";
-}
+   }
+
 
 a{
     text-decoration: none;
@@ -17,11 +21,6 @@ a{
     height: 8vh;
 }
 
-body{
-    max-width: 1440px;
-   margin: auto;
-   }
-
 h1{
     font-family: "Cormorant Garamond";
     color: white;
@@ -32,6 +31,10 @@ h1{
     height: 50%;
     margin-left: 15.5%;
     margin-right: 5%;
+}
+
+#home > img{
+    height: 100%;
 }
 
 form{
@@ -55,6 +58,10 @@ input{
     border: none;
 }
 
+#form >input:hover{
+    background-color: #e5dcff;
+}
+
 button{
     width: 20%;
     background-color: #340570;
@@ -62,4 +69,8 @@ button{
     font-size: 12pt;
     border-radius: 15px;
     color: white;
+}
+
+button:hover{
+    background-color: rgb(52, 48, 176);
 }
