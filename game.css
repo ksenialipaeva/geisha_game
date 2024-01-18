@@ -46,7 +46,7 @@ font-family: "Montserrat";
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 20vw;
+    width: 15vw;
 }
        
 
@@ -126,7 +126,7 @@ font-family: "Montserrat";
 
 
 .opponent_badge{
-    background-color: black;
+    background-color: #120789;
     height:50%;
     width:18%;
     border-radius: 10%;
@@ -136,7 +136,7 @@ font-family: "Montserrat";
 }
 
 .badge{
-    background-color: black;
+    background-color: #120789;
     height:38%;
     width:25%;
     border-radius: 10%;
@@ -146,17 +146,10 @@ font-family: "Montserrat";
     align-items: center;
 }
 
-#badge_enabled:hover{
+.badge:hover{
     background-color: rgb(52, 48, 176);
 }
 
-#badge_enabled{
-    background-color: #120789;
-}
-
-#badge_disabled{
-    background-color: #818181;
-}
 
 
 .player_badges{
@@ -164,7 +157,7 @@ font-family: "Montserrat";
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30vw;
+    width: 25vw;
     height: 100%;
     
 }
@@ -189,7 +182,7 @@ font-family: "Montserrat";
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vw;
+    width: 55vw;
     height: 100%;
     position: relative;
 }
@@ -208,26 +201,30 @@ font-family: "Montserrat";
 }
 
 #first_gift{
-    left: 5%;
+    left: 3%;
 }
 
 #second_gift{
-    left: 15%;
+    left: 12%;
 }
 
 #third_gift{
-    left: 25%;
+    left: 21%;
 }
 
 #fourth_gift{
-    left: 35%;
+    left: 30%;
 }
 
 #fifth_gift{
-    left: 45%;
+    left: 39%;
 }
 
 #sixth_gift{
+    left: 48%;
+}
+
+#seventh_gift{
     left: 55%;
 }
 

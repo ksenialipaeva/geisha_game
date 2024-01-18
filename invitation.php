@@ -125,6 +125,24 @@
                         }
                     }
             });
+            $.ajax({
+                    method: "POST",
+                    url: 'scripts/request_accept.php',
+                    data: {},
+                    success: function(response) {
+                        let jsonData = JSON.parse(response);
+                        if (jsonData.success == "1") {                            
+                            if (jsonData.result == 1){
+                                location.href = 'field.php';
+                            }
+                        }
+                        else
+                        {
+                            window.error.showModal();
+                            document.getElementById("error_text").innerText=jsonData.error;
+                        }
+                    }
+            });
             }, 2000);
         function function_send(id){
                 var name = document.getElementById("player"+id).textContent;
