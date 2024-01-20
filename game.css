@@ -204,28 +204,64 @@ font-family: "Montserrat";
     left: 3%;
 }
 
+#first_gift:focus{
+    border-width: 1px;
+    border-color:#FF1D6E;
+}
+
 #second_gift{
     left: 12%;
+}
+
+#second_gift:focus{
+    border-width: 1px;
+    border-color:#FF1D6E;
 }
 
 #third_gift{
     left: 21%;
 }
 
+#third_gift:focus{
+    border-width: 1px;
+    border-color:#FF1D6E;
+}
+
+
 #fourth_gift{
     left: 30%;
+}
+
+#fourth_gift:focus{
+    border-width: 1px;
+    border-color:#FF1D6E;
 }
 
 #fifth_gift{
     left: 39%;
 }
 
+#fifth_gift:focus{
+    border-width: 1px;
+    border-color:#FF1D6E;
+}
+
 #sixth_gift{
     left: 48%;
 }
 
+#sixth_gift:focus{
+    border-width: 1px;
+    border-color:#FF1D6E;
+}
+
 #seventh_gift{
     left: 55%;
+}
+
+#seventh_gift:focus{
+    border-width: 1px;
+    border-color:#FF1D6E;
 }
 
 .info{

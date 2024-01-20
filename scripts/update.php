@@ -16,6 +16,7 @@ else {
     $result4 = $result->RESULTS[4];
     $result5 = $result->RESULTS[5];
     $result6 = $result->RESULTS[6];
+    $result7 = $result->RESULTS[7];
 
     $arr = array('success' => 1, 'round' => $result0->round[0], 'card_count' => count($result1->card_id));
     $my_points = 0;
@@ -83,7 +84,25 @@ else {
     }
 
     $arr['turn'] = $result6->player_id[0];
+    $check_gifts = 0;
 
+    if (count($result7->name) == 3){
+        $check_gifts = 1;
+
+        $cookie_name = "choice1";
+        setcookie($cookie_name, $result7->card_id[0], time() + 3600, '/~s312580/geisha_game');
+        $arr['gift1'] = $result7->geisha_name[0];
+
+        $cookie_name = "choice2";
+        setcookie($cookie_name, $result7->card_id[1], time() + 3600, '/~s312580/geisha_game');
+        $arr['gift2'] = $result7->geisha_name[1];
+
+        $cookie_name = "choice3";
+        setcookie($cookie_name, $result7->card_id[2], time() + 3600, '/~s312580/geisha_game');
+        $arr['gift3'] = $result7->geisha_name[2];
+    }
+
+    $arr['check_gifts'] = $check_gifts;
     echo json_encode($arr);
  
 }

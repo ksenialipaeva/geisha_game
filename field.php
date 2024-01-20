@@ -14,6 +14,13 @@
             <button onclick="window.error.close();">ОК</button>
         </div>                
     </dialog>
+    <dialog id="choice">
+        <div>
+        <img id="choice1" src="src/stub.png">
+        <img id="choice2" src="src/stub.png">
+        <img id="choice3" src="src/stub.png">
+        </div>                
+    </dialog>
         <div class="wrapper">
         <div class="header">
             <div class="header_info">
@@ -42,7 +49,7 @@
             </div>
             <div class="opponent_info">
                 <div class="opponent">
-                    <p><?php echo $_COOKIE["op_login"]?></p>
+                    <p id="op_name"><?php echo $_COOKIE["op_login"]?></p>
                 </div>
                 <div class="point_wrapper">
                 <div class="points">
@@ -61,100 +68,100 @@
             <div class="row_cards">
             <div class="card" id="Ayane">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
                 <img src="src/Ayane.svg" alt="Аянэ">
                 <img src="src/ayane_badge.svg" alt="Жетон" id="badge_ayane">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
             </div>
             <div class="card" id="Iroha">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
                 <img src="src/Iroha.svg" alt="Ироха">
                 <img src="src/iroha_badge.svg" alt="Жетон" id="badge_iroha">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
             </div>
             <div class="card" id="Tomoyo">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
                 <img src="src/Tomoyo.svg" alt="Томойо">
                 <img src="src/tomoyo_badge.svg" alt="Жетон" id="badge_tomoyo">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
             </div>
             <div class="card" id="Namiko">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
                 <img src="src/Namiko.svg" alt="Намико">
                 <img src="src/namiko_badge.svg" alt="Жетон" id="badge_namiko">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
             </div>
             <div class="card" id="Tiharu">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
                 <img src="src/Tiharu.svg" alt="Тихару">
                 <img src="src/tiharu_badge.svg" alt="Жетон" id="badge_tiharu">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
             </div>
             <div class="card" id="Andzu">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
                 <img src="src/Andzu.svg" alt="Андзю">
                 <img src="src/andzu_badge.svg" alt="Жетон" id="badge_andzu">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
             </div>
             <div class="card" id="Ruri">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
                 <img src="src/Ruri.svg" alt="Рури">
                 <img src="src/ruri_badge.svg" alt="Жетон" id="badge_ruri">
                 <div class="row_check">
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
-                    <input type="checkbox" name="" />
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
+                    <input type="checkbox" name="" disabled>
                 </div>
             </div>
         </div>
@@ -162,7 +169,7 @@
         <div class="player_menu">
             <div class="person_info">
                 <div class="person">
-                    <p><?php echo $_COOKIE["login"]?></p>
+                    <p id="my_name"><?php echo $_COOKIE["login"]?></p>
                 </div>
                 <div class="points">
                     <p id="my_geishas_cnt">x</p>
@@ -183,7 +190,7 @@
                 </div>
             </div>
             <div class="row_badge_bottom">
-                <div class="badge" id="my_gift">
+                <div class="badge" id="my_gift" onclick="gift()">
                     <img src="src/gift_badge.svg" alt="Жетон Подарок">
                 </div>
                 <div class="badge" id="my_exchange">
@@ -229,6 +236,18 @@
                     success: function(response) {
                         let jsonData = JSON.parse(response);
                         turn = jsonData.turn;
+                        if (turn == "<?php echo $_COOKIE["op_id"]?>"){
+                            let op_name = document.getElementById("op_name");
+                            op_name.style.color = "#00FF29";
+                            let my_name = document.getElementById("my_name");
+                            my_name.style.color = "white";
+                        }
+                        else{
+                            let op_name = document.getElementById("op_name");
+                            op_name.style.color = "white";
+                            let my_name = document.getElementById("my_name");
+                            my_name.style.color = "#00FF29";
+                        }
                         let r = document.getElementById("round");
                         r.textContent = "Раунд " + jsonData.round;
                         var img_src = new Map();
@@ -306,6 +325,15 @@
                             let o4 = document.getElementById("op_exchange");
                             o4.style.backgroundColor = "#818181";
                         }
+                        if (jsonData.check_gifts == 1){
+                            window.choice.showModal();
+                            let im1 = document.getElementById("choice1");
+                            im1.src = img_src.get(jsonData["gift1"]);
+                            let im2 = document.getElementById("choice2");
+                            im2.src = img_src.get(jsonData["gift2"]);
+                            let im3 = document.getElementById("choice3");
+                            im3.src = img_src.get(jsonData["gift3"]);
+                        }
                     }
                         else
                         {
@@ -334,7 +362,10 @@
                         if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
                             alert("Выберите одну карту, кликнув на нее");
                             temp_badge = "<?php echo $_COOKIE["secret"]?>";
+                            alert(temp_badge);
                             badge_name = "secret";
+                            let badge = document.getElementById("my_secret");
+                            badge.style.backgroundColor = "#C64225";
                         }
                         else {
                             window.error.showModal();
@@ -352,7 +383,30 @@
                         if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
                             alert("Выберите две карты, кликнув на них");
                             temp_badge = "<?php echo $_COOKIE["ban"]?>";
+                            alert(temp_badge);
                             badge_name = "ban";
+                            let badge = document.getElementById("my_ban");
+                            badge.style.backgroundColor = "#C64225";
+                        }
+                        else {
+                            window.error.showModal();
+                            document.getElementById("error_text").innerText="Сейчас не ваш ход";
+                        }
+                    }
+            }
+            function gift(){
+                if (this.disabled == true){
+                        window.error.showModal();
+                        document.getElementById("error_text").innerText="Жетон уже использован";
+                    }
+                    else {
+                        if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                            alert("Выберите три карты, кликнув на них");
+                            temp_badge = "<?php echo $_COOKIE["gift"]?>";
+                            alert(temp_badge);
+                            badge_name = "gift";
+                            let badge = document.getElementById("my_gift");
+                            badge.style.backgroundColor = "#C64225";
                         }
                         else {
                             window.error.showModal();
@@ -406,13 +460,35 @@
                     temp_badge = 0;
                     badge_name = "";
                 }
+                else{
+                    if (badge_name="gift"){
+                    ch = -1;
+                    $.ajax({
+                    method: "POST",
+                    url: 'scripts/gift.php',
+                    data: {"badge": temp_badge+"", "card1": card[0]+"", "card2": card[1]+"", "card3": card[2]+""},
+                    success: function(response) {
+                        let jsonData = JSON.parse(response);
+                                    if (jsonData.success == "1")
+                                    {
+                                        alert("действие выполнено");
+                                    }
+                                    else
+                                    {
+                                        window.error.showModal();
+                                        document.getElementById("error_text").innerText=jsonData.error;
+                                    }
+                    }});
+                    temp_badge = 0;
+                    badge_name = "";
+                }
+                }
             }
             }
             //функции карт
             function first(){
-                if (temp_badge != 0){
-                    if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
-                        document.getElementById("first_gift").style.borderColor = "#ff0000";
+                if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                    if (temp_badge != 0){
                         ch++;
                         let card_value1 = "<?php echo $_COOKIE["card0"]?>";
                         card[ch] = card_value1;
@@ -422,138 +498,138 @@
                     }
                     else {
                         window.error.showModal();
-                        document.getElementById("error_text").innerText="Сейчас не ваш ход";
+                        document.getElementById("error_text").innerText="Жетон не выбран";
                     }
                 }
                 else {
                     window.error.showModal();
-                    document.getElementById("error_text").innerText="Жетон не выбран";
+                    document.getElementById("error_text").innerText="Сейчас не ваш ход";
                 }
             }
             function second(){
-                if (temp_badge != 0){
-                    if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                    if (temp_badge != 0){
                         document.getElementById("second_gift").style.borderColor = "#ff0000";
                         ch++;
                         let card_value2 = "<?php echo $_COOKIE["card1"]?>";
                         card[ch] = card_value2;
                         if (ch == count_card.get(badge_name)){
                             choose_procedure(badge_name);     
-                        }             
+                        }              
                     }
                     else {
                         window.error.showModal();
-                        document.getElementById("error_text").innerText="Сейчас не ваш ход";
+                        document.getElementById("error_text").innerText="Жетон не выбран";
                     }
                 }
                 else {
                     window.error.showModal();
-                    document.getElementById("error_text").innerText="Жетон не выбран";
+                    document.getElementById("error_text").innerText="Сейчас не ваш ход";
                 }
             }
             function third(){
-                if (temp_badge != 0){
-                    if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                    if (temp_badge != 0){
                         document.getElementById("third_gift").style.borderColor = "#ff0000";
                         ch++;
                         let card_value3 = "<?php echo $_COOKIE["card2"]?>";
                         card[ch] = card_value3;
                         if (ch == count_card.get(badge_name)){
                             choose_procedure(badge_name);     
-                        }                
+                        }             
                     }
                     else {
                         window.error.showModal();
-                        document.getElementById("error_text").innerText="Сейчас не ваш ход";
+                        document.getElementById("error_text").innerText="Жетон не выбран";
                     }
                 }
                 else {
                     window.error.showModal();
-                    document.getElementById("error_text").innerText="Жетон не выбран";
+                    document.getElementById("error_text").innerText="Сейчас не ваш ход";
                 }
             }
             function fourth(){
-                if (temp_badge != 0){
-                    if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                    if (temp_badge != 0){
                         document.getElementById("fourth_gift").style.borderColor = "#ff0000";
                         ch++;
                         let card_value4 = "<?php echo $_COOKIE["card3"]?>";
                         card[ch] = card_value4;
                         if (ch == count_card.get(badge_name)){
                             choose_procedure(badge_name);     
-                        }                 
+                        }                         
                     }
                     else {
                         window.error.showModal();
-                        document.getElementById("error_text").innerText="Сейчас не ваш ход";
+                        document.getElementById("error_text").innerText="Жетон не выбран";
                     }
                 }
                 else {
                     window.error.showModal();
-                    document.getElementById("error_text").innerText="Жетон не выбран";
+                    document.getElementById("error_text").innerText="Сейчас не ваш ход";
                 }
             }
             function fifth(){
-                if (temp_badge != 0){
-                    if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                    if (temp_badge != 0){
                         document.getElementById("fifth_gift").style.borderColor = "#ff0000";
                         ch++;
                         let card_value5 = "<?php echo $_COOKIE["card4"]?>";
                         card[ch] = card_value5;
                         if (ch == count_card.get(badge_name)){
                             choose_procedure(badge_name);     
-                        }                 
+                        }                          
                     }
                     else {
                         window.error.showModal();
-                        document.getElementById("error_text").innerText="Сейчас не ваш ход";
+                        document.getElementById("error_text").innerText="Жетон не выбран";
                     }
                 }
                 else {
                     window.error.showModal();
-                    document.getElementById("error_text").innerText="Жетон не выбран";
+                    document.getElementById("error_text").innerText="Сейчас не ваш ход";
                 }
             }
             function sixth(){
-                if (temp_badge != 0){
-                    if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                    if (temp_badge != 0){
                         document.getElementById("sixth_gift").style.borderColor = "#ff0000";
                         ch++;
                         let card_value6 = "<?php echo $_COOKIE["card5"]?>";
                         card[ch] = card_value6;
                         if (ch == count_card.get(badge_name)){
                             choose_procedure(badge_name);     
-                        }                   
+                        }                         
                     }
                     else {
                         window.error.showModal();
-                        document.getElementById("error_text").innerText="Сейчас не ваш ход";
+                        document.getElementById("error_text").innerText="Жетон не выбран";
                     }
                 }
                 else {
                     window.error.showModal();
-                    document.getElementById("error_text").innerText="Жетон не выбран";
+                    document.getElementById("error_text").innerText="Сейчас не ваш ход";
                 }
             }
             function seventh(){
-                if (temp_badge != 0){
-                    if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                if (turn != "<?php echo $_COOKIE["op_id"]?>"){ //сейчас ход игрока
+                    if (temp_badge != 0){
                         document.getElementById("seventh_gift").style.borderColor = "#ff0000";
                         ch++;
                         let card_value7 = "<?php echo $_COOKIE["card6"]?>";
                         card[ch] = card_value7;
                         if (ch == count_card.get(badge_name)){
                             choose_procedure(badge_name);     
-                        }                 
+                        }                        
                     }
                     else {
                         window.error.showModal();
-                        document.getElementById("error_text").innerText="Сейчас не ваш ход";
+                        document.getElementById("error_text").innerText="Жетон не выбран";
                     }
                 }
                 else {
                     window.error.showModal();
-                    document.getElementById("error_text").innerText="Жетон не выбран";
+                    document.getElementById("error_text").innerText="Сейчас не ваш ход";
                 }
             }
         </script>
