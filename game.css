@@ -280,7 +280,33 @@ font-family: "Montserrat";
     border-radius: 50%;
 }
 
+#choice_div{
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
 
+
+.pair{
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#choice_div > img{
+    height: 100%;
+}
+
+.pair > img{
+    height: 70%;
+}
 
 .info > p{
     font-family: 'Montserrat';

@@ -1,8 +1,7 @@
 <?php
+$pair = $_POST["pair"];
 $token = $_COOKIE["token"];
-$card1 = $_POST["card1"];
-$card2 = $_POST["card2"];
-$result = file_get_contents("https://mysql.lavro.ru/call.php?db=312580&pname=ban&p1=$token&p2=$card1&p3=$card2");
+$result = file_get_contents("https://mysql.lavro.ru/call.php?db=312580&pname=choose_pair&p1=$token&p2=$pair");
 $result = json_decode($result);
 
 if (isset($result->ERROR[0])) {

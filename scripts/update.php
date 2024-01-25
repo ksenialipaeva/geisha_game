@@ -17,14 +17,20 @@ else {
     $result5 = $result->RESULTS[5];
     $result6 = $result->RESULTS[6];
     $result7 = $result->RESULTS[7];
+    $result8 = $result->RESULTS[8];
+    $result9 = $result->RESULTS[9];
+    $result10 = $result->RESULTS[10];
+    $result11 = $result->RESULTS[11];
+    $result14 = $result->RESULTS[14];
 
     $arr = array('success' => 1, 'round' => $result0->round[0], 'card_count' => count($result1->card_id));
     $my_points = 0;
     $op_points = 0;
 
+    $arr['count_cards'] = count($result1->card_id);
     for ($i = 0; $i < count($result1->card_id); $i++) {
-        $cookie_name = "card".$i;
-        setcookie($cookie_name, $result1->card_id[$i], time() + 3600, '/~s312580/geisha_game');
+        $card_name = "card".$i;
+        $arr[$card_name] = $result1->card_id[$i];
         array_push($arr, $result1->geisha_name[$i]);
     }
 
@@ -47,23 +53,15 @@ else {
 
     for ($i = 0; $i < 4; $i++) {
         if ($result4->Action[$i] == "секрет"){
-            $cookie_name = "secret";
-            setcookie($cookie_name, $result4->ID[$i], time() + 3600, '/~s312580/geisha_game');
             $arr['my_secret'] = $result4->Expire[$i];
         }
         if ($result4->Action[$i] == "запрет"){
-            $cookie_name = "ban";
-            setcookie($cookie_name, $result4->ID[$i], time() + 3600, '/~s312580/geisha_game');
             $arr['my_ban'] = $result4->Expire[$i];
         }
         if ($result4->Action[$i] == "подарок"){
-            $cookie_name = "gift";
-            setcookie($cookie_name, $result4->ID[$i], time() + 3600, '/~s312580/geisha_game');
             $arr['my_gift'] = $result4->Expire[$i];
         }
         if ($result4->Action[$i] == "обмен"){
-            $cookie_name = "exchange";
-            setcookie($cookie_name, $result4->ID[$i], time() + 3600, '/~s312580/geisha_game');
             $arr['my_exchange'] = $result4->Expire[$i];
         }
     }
@@ -86,23 +84,60 @@ else {
     $arr['turn'] = $result6->player_id[0];
     $check_gifts = 0;
 
-    if (count($result7->name) == 3){
+    $arr['choice1'] = 0;
+    $arr['choice2'] = 0;
+    $arr['choice3'] = 0;
+
+    if (count($result7->geisha_name) == 3){
         $check_gifts = 1;
 
-        $cookie_name = "choice1";
-        setcookie($cookie_name, $result7->card_id[0], time() + 3600, '/~s312580/geisha_game');
+        $arr['choice1'] = $result7->card_id[0];
         $arr['gift1'] = $result7->geisha_name[0];
 
-        $cookie_name = "choice2";
-        setcookie($cookie_name, $result7->card_id[1], time() + 3600, '/~s312580/geisha_game');
+        $arr['choice2'] = $result7->card_id[1];
         $arr['gift2'] = $result7->geisha_name[1];
 
-        $cookie_name = "choice3";
-        setcookie($cookie_name, $result7->card_id[2], time() + 3600, '/~s312580/geisha_game');
+        $arr['choice3'] = $result7->card_id[2];
         $arr['gift3'] = $result7->geisha_name[2];
     }
 
     $arr['check_gifts'] = $check_gifts;
+
+    $check_pairs = 0;
+    $arr['pair1'] = 0;
+    $arr['pair2'] = 0;
+    if (count($result8->pair_id) == 4){
+        $check_pairs = 1;
+        $arr['pair1'] = $result8->pair_id[0];
+        $arr['pair2'] = $result8->pair_id[2];
+        $arr['paircard1'] = $result8->geisha_name[0];
+        $arr['paircard2'] = $result8->geisha_name[1];
+        $arr['paircard3'] = $result8->geisha_name[2];
+        $arr['paircard4'] = $result8->geisha_name[3];
+    }
+    $arr['check_pairs'] = $check_pairs;
+
+    if ($result9->count == 1){
+        $arr['full_game'] = 0;
+    }
+    else{
+        $arr['full_game'] = 1;
+    }
+
+    $arr['mycheck'] = count($result10->count);
+    for ($i = 0; $i < (count($result10->count)); $i++)  {
+        $arr['mycount'.$i] = $result10->count[$i];
+        $arr['mygeishacheck'.$i] = $result10->geisha_name[$i];
+    }
+
+    $arr['opcheck'] = count($result11->count);
+    for ($i = 0; $i < (count($result11->count)); $i++)  {
+        $arr['opcount'.$i] = $result11->count[$i];
+        $arr['opgeishacheck'.$i] = $result11->geisha_name[$i];
+    }
+
+    $arr['time'] = $result14->time[0];
+
     echo json_encode($arr);
  
 }

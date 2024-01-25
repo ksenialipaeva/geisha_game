@@ -1,5 +1,5 @@
 var i = 0;
-var count = 8;
+var count = 10;
 
 function next(){
     var id = "text"+i;
