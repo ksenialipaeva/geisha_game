@@ -1,5 +1,3 @@
-@media (min-width: 1100px) {
-
 .block{
     display: flex;
     flex-direction: column;
@@ -14,18 +12,22 @@
 a{
     text-decoration: none;
 }
-#play{
-    background-color: #340570;
+
+#play, #rules{
+    font-family: 'Cormorant Garamond';
+    font-size: 36px;
+    color: white;
     width: 100%;
     height: 8%;
-    font-family: 'Cormorant Garamond';
-    font-size: 36pt;
-    color: white;
     margin-top: 2%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+#play{
+    background-color: #340570;
 }
 
 #play:hover{
@@ -34,16 +36,6 @@ a{
 
 #rules{
     background-color: #CC1578;
-    width: 100%;
-    height: 8%;
-    font-family: 'Cormorant Garamond';
-    font-size: 36pt;
-    color: white;
-    margin-top: 2%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
 
 #rules:hover{
@@ -52,24 +44,23 @@ a{
 
 body{
     background-image: url("src/background.jpg");
+    background-size: cover;
+    margin: auto;
 }
 
 .stub{
     display: none;
 }
-}
+
 
 @media (max-width: 1100px) {
-    .block{
-        display: none;
+
+    #title{
+        width: 90%;
     }
-    
-    .stub{
-        display: flex;
-        height: 100vh;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        font-family: "Montserrat";
+
+    #play, #rules{
+        font-size: 32px;
+        height: 6%;
     }
-    }
+}
